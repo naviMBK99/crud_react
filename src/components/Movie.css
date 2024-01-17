@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #141e30, #243b55);
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-field {
+  margin-bottom: 10px;
+}
+.input-field button {
+  font-size: 16px;
+  background-color: azure;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.input-field button:hover {
+  background-color: darkred;
+  color: white;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+h1 {
+  color: darkred;
+}
+.movie-card {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  height: 400px;
+  text-align: center;
+  animation: scaleUp 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-card img {
+  width: 100%;
+  height: 200px;
+}
+
+.btns button {
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: azure;
+}
+.btns button:hover {
+  background-color: darkred;
+  color: white;
+}
+.deleteBtn {
+  margin-right: 20px;
+}
+input {
+  font-size: 15px;
+}
